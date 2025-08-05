@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.mydiv {
+        background: url('assets/comsats-islamabad-campus.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 140%;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: rgba(12, 39, 102, 0.9); 
+    color: white;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 20px; 
+    padding: 20px;
+}
+.content1 {
+    margin-top: 100px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name {
+    padding-left: 10px; 
+    font-size: 18px; 
+    margin-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    height: 80px; 
+    width: 90px; 
+    padding-left: 7px; 
+    margin-top: -8px;
+}
+
+.icons-div{ 
+    margin-top: 8px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.icon-box{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(160, 252, 255, 0.9);
+    align-content: center;
+    border-radius: 50%;
+}
+
+.icon-box:hover {
+    background-color: rgba(43, 186, 190, 0.9);
+}
+
+.icons {
+    margin-top: 2px;
+    margin-left: 7px;
+    height: 20px;
+    width: 20px;
+}
+
+.read {
+    margin-top: 50px;
+    background-color: rgb(25, 58, 136);
+    color: white;
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    border-width: 0px;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.read:hover {
+    background-color: rgb(33, 89, 219);
+    transform: scale(1.05);
+}
+
+.menus {
+    font-size: 14px;
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-family:unset ;
+}
+
+.image-box {
+    height: 150px;
+    width: 200px; 
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+}
+
+.image-container:hover .image-box {
+    transform: scale(1.1); /* Zooms in the image */
+}
+
+/* The black transparent overlay */
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Smooth fade-in effect */
+}
+
+/* Show overlay and text on hover */
+.image-container:hover .overlay1 {
+    opacity: 1;
+}
+
+/* Text that appears over the image */
+.text {
+    color: white;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: -18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.web-text {
+    font-size: 12px; 
+    margin-top: 10px;
+    color: rgb(158, 156, 156);
+    font-style: italic;
+}
+
+/* Remove underline and default link styles */
+.explore-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the surrounding elements */
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and zoom-in transition */
+}
+
+/* Hover effect to change color to yellow and zoom-in the text */
+.explore-link:hover {
+    transform: scale(1.05); /* Slightly zoom in the text */
+}
+
+.mydiv2 {
+    background: url('assets/comsats-university-islamabad.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.overlay2 {
+    position: relative;
+    width: 100%;
+    height: 140%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.more {
+    margin-left: 250px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: rgb(87, 181, 224);
+    color: rgb(0, 0, 0);
+    height: 45px;
+    width: 250px;
+    border-radius: 50px;
+    border-width: 0px;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.more:hover {
+    background-color: rgb(11, 69, 95);
+    color: white;
+}
+
+.admissionInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.infoDiv {
+    height: 340px;
+    width: 230px;
+    border-style:ridge;
+    border-radius: 20px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: rgb(131, 127, 127);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.icon-container {
+    margin-top: 20px;
+}
+
+.admissionInfoLearn {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(28, 39, 105);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    border-width: 0px;
+}
+
+.paragraph {
+    font-size: 13px; 
+    margin-top:10px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    color: rgb(196, 192, 192);
+}
+
+.admissionInfoLearn:hover {
+    background-color: rgb(46, 111, 196);;
+}
+
+.rector {
+    height: 740px;
+    width: 350px;
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 20px;
+    color: black;
+}
+
+.rectorMessage {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.rectorPhoto {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.readButton {
+    margin-top: 20px;
+    background-color: rgb(9, 39, 66);
+    color: rgb(255, 255, 255);
+    height: 43px;
+    width: 130px;
+    border-radius: 50px;
+    border-width: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.readButton:hover {
+    background-color: rgb(31, 99, 158);
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: styling for links in the footer */
+footer a {
+    color: #74C0FC;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logoName {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.logoName2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.name2 {
+    color: white;
+    font-weight: bold;
+    padding-left: 10px; 
+    font-size: 18px; 
+    margin-top: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.explore {
+      color: white; 
+      font-size: 13px; 
+      text-decoration: none;
+}
+
+.explore:hover {
+    color: #c0e1fa;
+}
+
+.Settinglinks {
+    margin-top: 20px;
+}
+
+.newsContainer {
+    height: 480px;
+    width: 250px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+    color: black;
+}
+
+.newsLink {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.newsPhoto {
+    height: 250px;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px; /* TL, TR, BR, BL */
+    object-fit: cover;
+}
+
+.text-primary {
+    padding-top: 10px;
+    font-size: 23px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #093B6A;
+}
+
+.newsButton {
+    width: 273px; 
+    height: 48px; 
+    border-radius: 60px; 
+    background-color: #093B6A; 
+    color: white; 
+    border-width: 0px; 
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsButton:hover {
+    background-color: #2666a3;
+}
+
+.four-divs {
+    padding-left: 20px;
+    padding-top: 50px;
+    width: 230px;
+    height: 278px;
+    border-radius: 40px;
+}
+
+.div-one {
+    width: 600px;
+    padding-top: 100px;
+    padding-left: 50px;
+    line-height: 1.3;
+}
+
+.div-two { 
+    margin-top: 100px;
+    margin-left: 130px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+    overflow: hidden; 
+}
+
+.image-style {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 450px; 
+    left: 200px;
+    transform: translate(-30%, -30%); /* Center text */
+    color: white;
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Optional shadow for readability */
+    z-index: 1;
+}
